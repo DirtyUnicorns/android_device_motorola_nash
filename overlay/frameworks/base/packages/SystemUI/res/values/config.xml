@@ -33,4 +33,7 @@
          increase the rate of unintentional unlocks. -->
     <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
 
+    <!-- Doze: pulse parameter - how long does it take to fade in after an intent? -->
+    <integer name="doze_pulse_duration_in_intent">0</integer>
+
 </resources>
