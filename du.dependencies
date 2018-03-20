@@ -1,0 +1,32 @@
+[
+  {
+   "repository":  "DirtyUnicorns/android_device_motorola_nash",
+   "target_path": "device/motorola/nash",
+   "branch":      "o8x-caf"
+  },
+  {
+   "repository":  "DirtyUnicorns/android_device_qcom_common",
+   "target_path": "device/qcom/common",
+   "branch":      "o8x-caf"
+  },
+  {
+   "repository":  "DirtyUnicorns/android_kernel_motorola_msm8998",
+   "target_path": "kernel/motorola/msm8998",
+   "branch":      "o8x-caf"
+  },
+  {
+   "repository" : "DirtyUnicorns/android_system_qcom",
+   "target_path": "system/qcom",
+   "branch"     : "o8x-caf"
+  },
+  {
+   "repository" : "DirtyUnicorns/android_vendor_qcom_opensource_time-services",
+   "target_path": "vendor/qcom/opensource/time-services",
+   "branch"     : "o8x-caf"
+  },
+  {
+   "repository":  "DirtyUnicorns/android_vendor_motorola",
+   "target_path": "vendor/motorola",
+   "branch":      "o8x-caf"
+  }
+]
