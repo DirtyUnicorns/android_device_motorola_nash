@@ -365,6 +365,12 @@
         <item>"/system/framework/arm64/boot-core-libart.vdex"</item>
     </string-array>
 
+    <!-- Paths to the libraries that contain device specific key handlers -->
+    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/MotoActions/MotoActions.apk</string>
+
+    <!-- Names of the key handler classes -->
+    <string name="config_deviceKeyHandlerClass" translatable="false">com.dirtyunicorns.settings.device.KeyHandler</string>
+
     <!-- True if camera app should be pinned via Pinner Service -->
     <bool name="config_pinnerCameraApp">true</bool>
 
