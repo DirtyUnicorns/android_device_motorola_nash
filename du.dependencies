@@ -28,5 +28,10 @@
    "repository":  "DirtyUnicorns/android_vendor_motorola",
    "target_path": "vendor/motorola",
    "branch":      "o8x-caf"
+  },
+  {
+    "repository":  "DirtyUnicorns/android_vendor_pixelgapps",
+    "target_path": "vendor/pixelgapps",
+    "branch":      "o8x"
   }
 ]
