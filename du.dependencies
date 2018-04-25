@@ -1,10 +1,5 @@
 [
   {
-   "repository":  "DirtyUnicorns/android_device_motorola_nash",
-   "target_path": "device/motorola/nash",
-   "branch":      "o8x-caf"
-  },
-  {
    "repository":  "DirtyUnicorns/android_device_qcom_common",
    "target_path": "device/qcom/common",
    "branch":      "o8x-caf"
