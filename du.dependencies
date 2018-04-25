@@ -15,6 +15,11 @@
    "branch":      "o8x-caf"
   },
   {
+   "repository" : "DirtyUnicorns/android_external_bson",
+   "target_path": "external/bson",
+   "branch"     : "o8x-caf"
+  },
+  {
    "repository" : "DirtyUnicorns/android_system_qcom",
    "target_path": "system/qcom",
    "branch"     : "o8x-caf"
