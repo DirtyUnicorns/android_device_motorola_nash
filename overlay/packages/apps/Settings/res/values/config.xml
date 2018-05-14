@@ -27,4 +27,5 @@
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
 
+    <bool name="config_hasBottomFingerprintSensor">true</bool>
 </resources>
