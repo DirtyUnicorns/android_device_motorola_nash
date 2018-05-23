@@ -8,12 +8,14 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
+
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="21"/>
 
     <application
-        android:label="OneplusDoze"
+        android:label="CustomDoze"
         android:persistent="true">
 
         <receiver android:name="com.custom.ambient.display.BootCompletedReceiver">
@@ -24,7 +26,7 @@
         </receiver>
 
         <service android:name="com.custom.ambient.display.DozeService"
-                 android:permission="OneplusDozeService">
+                 android:permission="CustomDozeService">
         </service>
 
         <activity
