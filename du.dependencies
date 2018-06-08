@@ -1,10 +1,5 @@
 [
   {
-   "repository":  "DirtyUnicorns/android_device_qcom_common",
-   "target_path": "device/qcom/common",
-   "branch":      "o8x-caf"
-  },
-  {
    "repository":  "DirtyUnicorns/android_kernel_motorola_msm8998",
    "target_path": "kernel/motorola/msm8998",
    "branch":      "o8x-caf"
