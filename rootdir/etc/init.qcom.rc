@@ -844,10 +844,10 @@ service vendor.tftp_server /vendor/bin/tftp_server
     user root
 
 on property:wc_transport.start_hci=true
-    start start_hci_filter
+    start vendor.start_hci_filter
 
 on property:wc_transport.start_hci=false
-    stop start_hci_filter
+    stop vendor.start_hci_filter
 
 service vendor.start_hci_filter /vendor/bin/wcnss_filter
     class late_start
@@ -1244,7 +1244,7 @@ service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
     writepid /dev/cpuset/system-background/tasks
 
 on property:vendor.ims.QMI_DAEMON_STATUS=1
-    start imsdatadaemon
+    start vendor.imsdatadaemon
 
 service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
     class main
@@ -1261,7 +1261,7 @@ service vendor.imsrcsservice /vendor/bin/imsrcsd
     writepid /dev/cpuset/system-background/tasks
 
 on property:vendor.ims.DATA_DAEMON_STATUS=1
-    start ims_rtp_daemon
+    start vendor.ims_rtp_daemon
     start vendor.imsrcsservice
 
 service vendor.init_wifi /vendor/bin/wlan_carrier_bin.sh
