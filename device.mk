@@ -127,7 +127,8 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.1-service.clearkey
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -152,6 +153,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1-service-qti \
     libgnss \
     libgnsspps \
+    libloc_api_v02 \
+    libloc_ds_api \
     libvehiclenetwork-native
 
 PRODUCT_PACKAGES += \
@@ -421,9 +424,6 @@ PRODUCT_PACKAGES += \
     libicuuc.vendor \
     libstdc++.vendor \
     vndk_package
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/android.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss@1.0-v27.so
 
 # Weaver
 PRODUCT_PACKAGES += \
