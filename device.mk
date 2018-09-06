@@ -118,8 +118,10 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8998 \
     memtrack.msm8998 \
     libdisplayconfig \
+    libhwc2on1adapter \
     libgenlock \
     liboverlay \
+    libqdMetaData \
     libqdMetaData.system \
     libvulkan \
     libtinyxml
