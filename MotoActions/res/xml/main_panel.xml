@@ -28,14 +28,4 @@
                 android:targetClass="com.dirtyunicorns.settings.device.GestureSettingsActivity" />
     </Preference>
 
-    <!--Preference
-        android:key="doze"
-        android:title="@string/ambient_display_title"
-        android:summary="@string/ambient_display_manage_summary"
-        android:icon="@drawable/ic_settings_doze">
-            <intent
-                android:targetPackage="com.dirtyunicorns.settings.device"
-                android:targetClass="com.dirtyunicorns.settings.device.DozeSettingsActivity" />
-    </Preference-->
-
 </PreferenceScreen>
