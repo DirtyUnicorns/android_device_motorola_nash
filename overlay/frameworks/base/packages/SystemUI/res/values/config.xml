@@ -36,4 +36,14 @@
     <!-- Doze: pulse parameter - how long does it take to fade in after an intent? -->
     <integer name="doze_pulse_duration_in_intent">0</integer>
 
+    <!-- Doze: Table that translates sensor values from the doze_brightness_sensor_type sensor
+               to brightness values; -1 means keeping the current brightness. -->
+    <integer-array name="config_doze_brightness_sensor_to_brightness">
+        <item>-1</item> <!-- 0: OFF -->
+        <item>2</item> <!-- 1: NIGHT -->
+        <item>15</item> <!-- 2: LOW -->
+        <item>27</item> <!-- 3: HIGH -->
+        <item>28</item> <!-- 4: SUN -->
+    </integer-array>
+
 </resources>
