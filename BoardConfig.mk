@@ -97,10 +97,8 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_BTNV := true
 
 # Camera
-USE_CAMERA_STUB := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
-TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
-    /vendor/bin/hw/android.hardware.camera.provider@2.4-service=27
+USE_CAMERA_STUB := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -185,7 +183,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 BOARD_ROOT_EXTRA_FOLDERS := persist
 
 # Vendor Security Patch Level
-VENDOR_SECURITY_PATCH := 2019-03-01
+VENDOR_SECURITY_PATCH := 2019-05-01
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
