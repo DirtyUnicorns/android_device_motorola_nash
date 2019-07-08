@@ -179,6 +179,26 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ims-ext-common
 
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.mmi.laser.sh \
+    init.mmi.ramdump.rc \
+    init.mmi.usb.rc \
+    init.mmi.usb.sh \
+    init.qcom.rc \
+    init.nash.rc \
+    init.power.rc \
+    init.qcom.early_boot.sh \
+    init.qcom.power.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.gbmods.sh \
+    init.qti.qseecomd.sh \
+    ueventd.qcom.rc \
+    move_time_data.sh \
+    wlan_carrier_bin.sh
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -307,7 +327,10 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-service-qti
+    android.hardware.power@1.2-service.nash-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    device/motorola/nash/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -318,26 +341,6 @@ PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl \
     librmnetctl \
     libprotobuf-cpp-full
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.mmi.laser.sh \
-    init.mmi.ramdump.rc \
-    init.mmi.usb.rc \
-    init.mmi.usb.sh \
-    init.qcom.rc \
-    init.nash.rc \
-    init.power.rc \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.gbmods.sh \
-    init.qti.qseecomd.sh \
-    ueventd.qcom.rc \
-    move_time_data.sh \
-    wlan_carrier_bin.sh
 
 # RCS
 PRODUCT_PACKAGES += \
